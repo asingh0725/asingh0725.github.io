@@ -149,7 +149,7 @@ a:hover {
 /* SECTIONS */
 
 section {
-  padding-top: 4vh;
+  padding-top: 2vh;
   height: 96vh;
   margin: 0 10rem;
   box-sizing: border-box;
@@ -269,6 +269,7 @@ section {
 
 .about-containers {
   gap: 2rem;
+  flex-wrap: wrap;
   margin-bottom: 2rem;
   margin-top: 2rem;
 }
