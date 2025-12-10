@@ -149,11 +149,11 @@ a:hover {
 /* SECTIONS */
 
 section {
-  padding-top: 2vh;
-  height: 96vh;
+  padding-top: 1vh;
+  /* height: 96vh; */
   margin: 0 10rem;
   box-sizing: border-box;
-  min-height: fit-content;
+  min-height: auto;
 }
 
 .section-container {
@@ -430,4 +430,131 @@ footer {
 
 footer p {
   text-align: center;
+}
+
+/* Fix section height squeezing */
+section {
+  min-height: 96vh;
+  height: auto;
+}
+
+/* Hero badge chips */
+.quick-badges {
+  display: flex;
+  justify-content: center;
+  gap: 0.75rem;
+  margin: 1rem 0;
+}
+
+.quick-badges span {
+  background: #f0f0f0;
+  padding: 0.4rem 0.75rem;
+  border-radius: 1rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+/* About quick stats */
+.quick-stats {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin: 1rem 0 2rem 0;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+/* Skill subtext */
+.skill-subtext {
+  font-size: 0.95rem;
+  text-align: center;
+  color: gray;
+  margin-top: -1rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Project cards */
+.project-card {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+/* Project image consistency */
+.project-img {
+  aspect-ratio: 16/9;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* Tag chips */
+.tag-row {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+  justify-content: center;
+}
+
+.tag {
+  background: #efefef;
+  padding: 0.35rem 0.7rem;
+  border-radius: 1rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+/* Contact pitch */
+.contact-pitch {
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 1.1rem;
+  color: #555;
+}
+
+/* Force projects into a clean 2-column layout */
+#projects .about-containers {
+  display: grid !important;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 4.5rem;
+  width: 100%;
+}
+
+/* Ensure all project cards match size/spacing */
+#projects .details-container.color-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-bottom: 2rem;
+  height: 100%;
+}
+
+/* Prevent images from stretching weirdly */
+#projects .project-img {
+  width: 100%;
+  aspect-ratio: 16 / 9; /* Keeps consistent shape */
+  object-fit: cover;
+  border-radius: 1rem;
+}
+
+/* Keep buttons bottom-aligned */
+#projects .btn-container {
+  margin-top: auto;
+}
+
+/* ---------- MOBILE LAYOUT FIXES ---------- */
+@media (max-width: 900px) {
+  /* Sections margin tighter on small screens (in case mediaqueries.css doesn't already do it) */
+  section {
+    margin: 0 1.5rem;
+  }
+
+  #projects .about-containers {
+    display: grid !important;
+    grid-template-columns: 1fr; /* single column */
+    gap: 4.5rem;
+    width: 80%;
+  }
 }
