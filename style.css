@@ -183,7 +183,7 @@ section {
   gap: 4rem;
   min-height: 70vh;
   flex-wrap: wrap;
-  padding-bottom: 3rem;
+  padding-bottom: 5rem;
   margin-bottom: 2rem;
 }
 
@@ -294,6 +294,14 @@ section {
 #about {
   position: relative;
   padding-top: 4rem;
+}
+
+#about .section__text__p1 {
+  margin-top: 1rem;
+}
+
+#about .title {
+  margin-top: 0.75rem;
 }
 
 #about .section__pic-container {
@@ -621,5 +629,9 @@ footer p {
 
   #about {
     padding-top: 5rem;
+  }
+
+  #about .section__text__p1 {
+    margin-top: 2rem;
   }
 }
