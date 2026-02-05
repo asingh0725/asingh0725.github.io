@@ -165,11 +165,13 @@ section {
   padding: 4rem 1.5rem;
   margin: 0 auto;
   max-width: 1140px;
+  scroll-margin-top: 120px;
 }
 
 .section-container {
   display: flex;
   gap: 3rem;
+  align-items: center;
 }
 
 /* PROFILE SECTION */
@@ -181,6 +183,7 @@ section {
   gap: 4rem;
   min-height: 70vh;
   flex-wrap: wrap;
+  padding-bottom: 3rem;
 }
 
 .section__pic-container {
@@ -229,6 +232,7 @@ section {
   display: flex;
   justify-content: center;
   margin-top: 1.5rem;
+  margin-bottom: 1rem;
   gap: 1rem;
 }
 
@@ -290,15 +294,22 @@ section {
   position: relative;
 }
 
+#about .section__pic-container {
+  justify-content: center;
+  height: auto;
+}
+
 .about-containers {
   gap: 2rem;
   flex-wrap: wrap;
   margin: 2rem 0;
+  align-items: center;
 }
 
 .about-details-container {
   justify-content: center;
   flex-direction: column;
+  flex: 1;
 }
 
 .about-containers,
@@ -309,6 +320,9 @@ section {
 .about-pic {
   border-radius: 2rem;
   box-shadow: var(--shadow);
+  width: 100%;
+  max-width: 360px;
+  margin: 0 auto;
 }
 
 .details-container {
@@ -481,6 +495,7 @@ footer p {
   font-weight: 500;
   flex-wrap: wrap;
   color: var(--text);
+  text-align: center;
 }
 
 /* Skill subtext */
@@ -573,6 +588,7 @@ footer p {
 @media (max-width: 600px) {
   #profile {
     min-height: auto;
+    padding-bottom: 4rem;
   }
 
   .section__pic-container {
@@ -594,5 +610,9 @@ footer p {
 
   .details-container {
     text-align: left;
+  }
+
+  .quick-stats {
+    gap: 0.75rem;
   }
 }
