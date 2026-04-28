@@ -42,7 +42,7 @@ const navLinks = [
   { label: 'Contact', href: '#contact' }
 ]
 
-const badges = ['AI Product Engineering', 'RAG + Multimodal', 'TypeScript + Next.js']
+const badges = ['Product Engineering', 'Claude', 'TypeScript + Next.js']
 
 const logos = [
   { label: 'OpenAI', icon: siOpenai },
@@ -471,10 +471,10 @@ export default function App() {
               Product-Focused Full-Stack Engineer
             </div>
             <h1 className="mt-6 font-display text-[clamp(2.6rem,7vw,5.5rem)] font-semibold uppercase tracking-[-0.02em] text-white">
-              AI Product Engineer
+              Product Oriented Software Engineer
             </h1>
             <p className="mt-4 max-w-xl text-lg text-white/70">
-              I build production-grade, cloud-native applications and AI-powered products across agriculture,
+              I build production-grade, cloud-native applications and AI-powered products across web3, agriculture,
               healthcare, and AI-native domains. My work spans TypeScript, React, Next.js, and PostgreSQL, with
               hands-on experience integrating LLMs, embeddings, and semantic retrieval into real-world systems.
             </p>
